@@ -1,0 +1,257 @@
+/* Kontakt Page Styles */
+.kontakt .page-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #121212 100%);
+  margin-top: 70px;
+}
+
+.kontakt .page-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(18, 18, 18, 0.6) 100%);
+}
+
+.kontakt .page-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.kontakt .page-hero h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.kontakt .page-hero h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #8B0000, #dc143c);
+  margin: 1rem auto 0;
+}
+
+.kontakt .page-hero p {
+  font-size: 1.3rem;
+  color: #aaa;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #fff;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: #f8f9fa;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(139, 0, 0, 0.15);
+  border-color: #8B0000;
+}
+
+.contact-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #8B0000 0%, #dc143c 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.contact-avatar span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contact-card h3 {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.contact-details {
+  text-align: left;
+}
+
+.contact-address {
+  color: #666;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  line-height: 1.7;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+}
+
+.contact-item a {
+  color: #1a1a1a;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+.contact-item a:hover {
+  color: #8B0000;
+}
+
+/* Company Section */
+.company-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #121212 100%);
+}
+
+.company-card {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: rgba(139, 0, 0, 0.1);
+  border: 1px solid rgba(139, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+.company-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-logo .logo-text {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #8B0000 0%, #dc143c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.company-logo .logo-subtext {
+  font-size: 0.9rem;
+  color: #dc143c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.company-info p {
+  color: #ccc;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.company-info strong {
+  color: #dc143c;
+}
+
+.company-info a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.company-info a:hover {
+  color: #dc143c;
+}
+
+/* Impressum Section */
+.impressum-section {
+  background: #f8f9fa;
+}
+
+.impressum-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.impressum-block {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border-left: 4px solid #8B0000;
+}
+
+.impressum-block h3 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.impressum-block p {
+  color: #666;
+  line-height: 1.8;
+}
+
+.impressum-block a {
+  color: #8B0000;
+  transition: color 0.3s ease;
+}
+
+.impressum-block a:hover {
+  color: #5c0000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .company-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .kontakt .page-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .kontakt .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .company-card {
+    padding: 1.5rem;
+  }
+}

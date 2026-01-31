@@ -1,0 +1,194 @@
+/* Page Hero */
+.page-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #121212 100%);
+  margin-top: 70px;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(18, 18, 18, 0.6) 100%);
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.page-hero h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.page-hero h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #8B0000, #dc143c);
+  margin: 1rem auto 0;
+}
+
+.page-hero p {
+  font-size: 1.3rem;
+  color: #aaa;
+}
+
+/* Intro Section */
+.intro {
+  background: #fff;
+}
+
+.intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-content h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.intro-content p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Services Section */
+.services-section {
+  background: #f8f9fa;
+}
+
+.leistungen .services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(139, 0, 0, 0.15);
+  border-color: #8B0000;
+}
+
+.service-card .service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Requirements Section */
+.requirements {
+  background: linear-gradient(135deg, #1a1a1a 0%, #121212 100%);
+}
+
+.requirements-card {
+  background: rgba(139, 0, 0, 0.1);
+  border: 1px solid rgba(139, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.requirements-card h2 {
+  color: #dc143c;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.requirements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+}
+
+.requirement-icon {
+  font-size: 2.5rem;
+}
+
+.requirement-item h4 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.requirement-item p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .leistungen .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .leistungen .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .requirements-card {
+    padding: 1.5rem;
+  }
+
+  .requirement-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}

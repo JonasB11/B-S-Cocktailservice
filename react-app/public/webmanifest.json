@@ -1,0 +1,16 @@
+{
+}
+  ]
+    }
+      "type": "image/png"
+      "sizes": "500x500",
+      "src": "/logo.png",
+    {
+  "icons": [
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "description": "Das ist die offizielle Website des B&S-Cocktailservice",
+  "short_name": "B&S-Cocktailservice",
+  "name": "B&S-Cocktailservice",
